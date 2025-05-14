@@ -1,0 +1,20 @@
+// @import "@/styles/branding/base/_variables.scss";
+@import "@/styles/branding/base/_mixins.scss";
+
+.container {
+  height: 100vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/styles/Images/card-image2.png");
+  // background-color: pink;
+
+  @include atLarge {
+    background-image: url("../../../assets/styles/Images/card-image2.png");
+    // background-image: url("../../../assets/styles/Images/n-m.jpg");
+  }
+}
+
+.name {
+  color: rgb(162, 93, 93);
+}

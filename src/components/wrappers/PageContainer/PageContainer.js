@@ -24,7 +24,7 @@ const PageContainer = ({ pageIdentifier, children }) => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Div ref={containerRef} className="width-per-100">
         {children}
       </Div>

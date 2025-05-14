@@ -2,7 +2,7 @@
 @use "helpers" as *;
 
 %fontclass {
-  font-family: "Signika Negative", sans-serif;
+  font-family: "iran-nastaliq";
   color: black;
   font-weight: 500;
   font-size: map.get($brandingFontSizes, "regular-xs");
@@ -86,11 +86,11 @@ p {
 
   &font- {
     &regular {
-      font-family: "Signika Negative", sans-serif;
+      font-family: "iran-nastaliq";
     }
 
     &title {
-      font-family: "Signika Negative", sans-serif;
+      font-family: "iran-nastaliq";
       font-weight: bold;
     }
   }

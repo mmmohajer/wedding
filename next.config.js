@@ -19,4 +19,12 @@ module.exports = {
   images: {
     domains: ["localhost", "makeclient.ngrok.io", "picsum.photos"],
   },
+
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(mp3|wav)$/,
+      type: "asset/resource",
+    });
+    return config;
+  },
 };
