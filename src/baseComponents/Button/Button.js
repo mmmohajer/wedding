@@ -7,10 +7,8 @@ const Button = ({ btnType = 1, className, children, ...props }) => {
     <>
       <button
         className={cx(
-          "p-y-8 p-x-16 br-rad-px-20 br-all-solid-2 mouse-hand",
-          btnType === 1
-            ? "bg-theme-two bg-theme-three-on-hover text-white"
-            : "",
+          "p-y-4 p-x-16 br-rad-px-20 br-all-solid-2 mouse-hand",
+          btnType === 1 ? "bg-theme-one bg-theme-one-on-hover text-white" : "",
           className
         )}
         {...props}

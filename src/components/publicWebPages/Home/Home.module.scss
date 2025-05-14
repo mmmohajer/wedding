@@ -6,15 +6,18 @@
 
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../../../assets/styles/Images/card-image2.png");
+  background-image: url("../../../assets/styles/Images/card-image.png");
   // background-color: pink;
 
   @include atLarge {
-    background-image: url("../../../assets/styles/Images/card-image2.png");
+    background-image: url("../../../assets/styles/Images/card-image.png");
     // background-image: url("../../../assets/styles/Images/n-m.jpg");
   }
 }
 
 .name {
   color: rgb(162, 93, 93);
+}
+.cardContainer {
+  background-image: url("../../../assets/styles/Images/bg.png");
 }

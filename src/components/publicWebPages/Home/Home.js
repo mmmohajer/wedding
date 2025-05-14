@@ -5,6 +5,7 @@ import Button from "@/baseComponents/Button";
 import AppImage from "@/baseComponents/AppImage";
 import styles from "./Home.module.scss";
 import WeddingCardImg from "../../../assets/styles/Images/wedding-card.png";
+import NewWeddingCardImg from "../../../assets/styles/Images/card-new.png";
 import audioFile from "../../../assets/styles/music/yar-mobarak-bada.mp3";
 import Icon from "@/baseComponents/Icon/Icon";
 import CardContent from "./CardContent";
@@ -68,21 +69,34 @@ const Home = () => {
           type="flex"
           hAlign="center"
           vAlign="center"
-          className="width-per-100 min-height-vh-full"
+          className={cx(
+            "width-per-100 p-l-temp-6 mouse-hand min-height-vh-full",
+            styles.cardContainer
+          )}
         >
           <Div className="pos-rel">
             <Div
-              className="pos-abs text-black z-10"
-              style={{ top: "80px", left: "200px" }}
+              type="flex"
+              direction="vertical"
+              hAlign="end"
+              className="pos-abs text-black z-10 width-px-200"
+              style={{ top: "90px", left: "50px" }}
             >
               {" "}
               :حضور محترم
-              <br />
-              خانواده درویشی
+            </Div>
+            <Div
+              type="flex"
+              direction="vertical"
+              hAlign="end"
+              className="pos-abs text-black z-10 width-px-200"
+              style={{ top: "130px", left: "50px" }}
+            >
+              خاله فرزانه عزیزم به همراه خانواده{" "}
             </Div>
             <AppImage
-              src={WeddingCardImg}
-              width={350}
+              src={NewWeddingCardImg}
+              width={360}
               heightOverWidthAsprctRatio={1.5}
               className="br-rad-md of-hidden"
               onClick={handleClick}
@@ -98,7 +112,12 @@ const Home = () => {
           className={cx("p-all-temp-10 text-black", styles.container)}
         >
           <CardContent />
-          <Div className="m-t-50">
+          <Div
+            type="flex"
+            hAlign="center"
+            className="m-t-auto width-per-100"
+            style={{ position: "fixed", bottom: "20px", left: 0 }}
+          >
             <Button onClick={toggleAudio} className={"m-r-10"}>
               {isPlaying ? "pause" : "play"}
             </Button>
