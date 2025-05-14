@@ -4,7 +4,6 @@ import Div from "@/baseComponents/Div";
 import Button from "@/baseComponents/Button";
 import AppImage from "@/baseComponents/AppImage";
 import styles from "./Home.module.scss";
-import WeddingCardImg from "../../../assets/styles/Images/wedding-card.png";
 import NewWeddingCardImg from "../../../assets/styles/Images/card-new.png";
 import audioFile from "../../../assets/styles/music/yar-mobarak-bada.mp3";
 import Icon from "@/baseComponents/Icon/Icon";
@@ -89,7 +88,7 @@ const Home = () => {
               type="flex"
               direction="vertical"
               hAlign="end"
-              className="pos-abs text-black z-10 width-px-200"
+              className="pos-abs text-theme-two z-10 width-px-200"
               style={{ top: "130px", left: "50px" }}
             >
               خاله فرزانه عزیزم به همراه خانواده{" "}
@@ -116,7 +115,7 @@ const Home = () => {
             type="flex"
             hAlign="center"
             className="m-t-auto width-per-100"
-            style={{ position: "fixed", bottom: "20px", left: 0 }}
+            style={{ position: "fixed", bottom: "10px", left: 0 }}
           >
             <Button onClick={toggleAudio} className={"m-r-10"}>
               {isPlaying ? "pause" : "play"}
@@ -142,6 +141,7 @@ const Home = () => {
         >
           <Div
             type="flex"
+            direction="vertical"
             hAlign="center"
             style={{
               backgroundColor: "white",
@@ -151,17 +151,20 @@ const Home = () => {
               maxWidth: "600px",
             }}
           >
-            <Div>نقشه مکانی</Div>
+            <Div type="flex" hAlign="end" className="width-per-100">
+              <Div className="m-r-temp-5">نقشه مکانی</Div>
+              <Div onClick={toggleModal}>☓</Div>
+            </Div>
+
+            {/* <Button onClick={toggleModal} className={"m-t-temp-5"}></Button> */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.3113888950847!2d53.0173628!3d36.6188906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f856b5433c91c33%3A0xc1ddd9f60c46647!2z2KjYp9i6INiq2KfZhNin2LEg2YXYp9mH2YjYsQ!5e0!3m2!1sen!2s!4v1747237124925!5m2!1sen!2s"
               width="100%"
-              height="400"
+              height="320"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
             ></iframe>
-
-            <Button onClick={toggleModal}>Close</Button>
           </Div>
         </Div>
       )}
