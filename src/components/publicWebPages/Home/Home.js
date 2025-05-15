@@ -8,6 +8,7 @@ import NewWeddingCardImg from "../../../assets/styles/Images/card-new.png";
 import audioFile from "../../../assets/styles/music/yar-mobarak-bada.mp3";
 import Icon from "@/baseComponents/Icon/Icon";
 import CardContent from "./CardContent";
+import { COLORS } from "@/constants/vars";
 
 const Home = ({ guest }) => {
   const [isCardOpened, setIsCardOpened] = useState(false);
@@ -100,6 +101,9 @@ const Home = ({ guest }) => {
               className="br-rad-md of-hidden"
               onClick={handleClick}
             />
+            <Div type="flex" hAlign="center" className="m-t-10 text-theme-one">
+              برای اطلاعات بیشتر روی کارت کلیک کنید
+            </Div>
           </Div>
         </Div>
       )}
@@ -113,14 +117,26 @@ const Home = ({ guest }) => {
           <CardContent />
           <Div
             type="flex"
-            hAlign="center"
+            hAlign="start"
             className="m-t-auto width-per-100"
-            style={{ position: "fixed", bottom: "10px", left: 0 }}
+            style={{ position: "fixed", bottom: "10px", right: "-30px" }}
           >
-            <Button onClick={toggleAudio} className={"m-r-10"}>
-              {isPlaying ? "pause" : "play"}
+            <Div
+              type="flex"
+              vAlign="center"
+              onClick={toggleAudio}
+              className={"m-r-10"}
+            >
+              {isPlaying ? (
+                <Icon type="pause" color={COLORS["theme-one"]} scale={3} />
+              ) : (
+                <Icon type="play" color={COLORS["theme-one"]} scale={3} />
+              )}
+            </Div>
+
+            <Button onClick={toggleModal} className={"height-px-50 m-l-20"}>
+              نمایش نقشه
             </Button>
-            <Button onClick={toggleModal}>نمایش نقشه</Button>
           </Div>
         </Div>
       )}

@@ -1,5 +1,5 @@
 export const COLORS = {
-  "theme-one": "#b4debd",
+  "theme-one": "#a25d5d",
   "theme-two": "#182d4f",
   "theme-three": "#2c5f75",
   "theme-four": "#5271ff",
