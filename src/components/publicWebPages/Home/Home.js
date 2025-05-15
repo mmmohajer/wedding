@@ -9,7 +9,7 @@ import audioFile from "../../../assets/styles/music/yar-mobarak-bada.mp3";
 import Icon from "@/baseComponents/Icon/Icon";
 import CardContent from "./CardContent";
 
-const Home = () => {
+const Home = ({ guest }) => {
   const [isCardOpened, setIsCardOpened] = useState(false);
   const [audio, setAudio] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -91,7 +91,7 @@ const Home = () => {
               className="pos-abs text-theme-two z-10 width-px-200"
               style={{ top: "130px", left: "50px" }}
             >
-              خاله فرزانه عزیزم به همراه خانواده{" "}
+              {guest?.Guest_Name}
             </Div>
             <AppImage
               src={NewWeddingCardImg}

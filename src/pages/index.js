@@ -13,9 +13,7 @@ const index = () => {
         url="https://Makeclient.ngrok.io/"
         imgAlt="Logo of Site"
       >
-        <PageContainer pageIdentifier="home">
-          <Home />
-        </PageContainer>
+        <PageContainer pageIdentifier="home">{/* <Home /> */}</PageContainer>
       </Seo>
     </>
   );
