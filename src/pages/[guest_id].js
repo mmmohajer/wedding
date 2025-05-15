@@ -47,9 +47,9 @@ const index = ({ guest }) => {
   return (
     <>
       <Seo
-        title="Guardian Assessment"
-        keywords="guardian, assessment"
-        description="This is to assess my skills"
+        title="Wedding Invitation"
+        keywords="wedding"
+        description="Your presence will make us happy."
         imagePreview="/images/Logo.png"
         url="https://Makeclient.ngrok.io/"
         imgAlt="Logo of Site"
