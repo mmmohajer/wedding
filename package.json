@@ -16,7 +16,8 @@
     "next-sitemap": "4.2.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-redux": "9.2.0"
+    "react-redux": "9.2.0",
+    "papaparse": "5.5.2"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "6.2.1",
