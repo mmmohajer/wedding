@@ -11,7 +11,7 @@ const index = () => {
         description="We would be delighted to have you with us on our special day."
         imagePreview="/images/Logo.png"
         url="https://celebratinglove.vercel.app"
-        imgAlt="Logo of Site"
+        imgAlt="Logo of The Site"
       >
         <PageContainer pageIdentifier="home">{/* <Home /> */}</PageContainer>
       </Seo>
