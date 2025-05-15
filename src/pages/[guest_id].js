@@ -11,7 +11,6 @@ export async function getStaticPaths() {
   const file = fs.readFileSync(filePath, "utf8");
   const parsed = Papa.parse(file, { header: true });
 
-  // Filter out invalid rows
   const validRows = parsed.data.filter(
     (row) => typeof row.Guest_ID === "string" && row.Guest_ID.trim() !== ""
   );
