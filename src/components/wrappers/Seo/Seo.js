@@ -5,7 +5,7 @@ const Seo = ({
   keywords = "",
   description = ``,
   imagePreview = "/images/favicon/logo.png",
-  url = "celebratinglove.vercel.app",
+  url = "https://mn-wedding-invitation.vercel.app/",
   imgAlt = "",
   children,
 }) => {
