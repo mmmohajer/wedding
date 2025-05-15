@@ -49,9 +49,9 @@ const index = ({ guest }) => {
       <Seo
         title="Wedding Invitation"
         keywords="wedding"
-        description="Your presence will make us happy."
+        description="We would be delighted to have you with us on our special day."
         imagePreview="/images/Logo.png"
-        url="https://Makeclient.ngrok.io/"
+        url="https://celebratinglove.vercel.app"
         imgAlt="Logo of Site"
       >
         <PageContainer pageIdentifier="home">
