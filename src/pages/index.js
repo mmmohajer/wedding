@@ -8,7 +8,7 @@ const index = () => {
       <Seo
         title="Wedding Invitation"
         keywords="wedding"
-        description="Your presence will make us happy."
+        description="We would be delighted to have you with us on our special day."
         imagePreview="/images/Logo.png"
         url="https://Makeclient.ngrok.io/"
         imgAlt="Logo of Site"
