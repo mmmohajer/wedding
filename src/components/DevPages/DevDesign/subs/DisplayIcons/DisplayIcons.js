@@ -7,7 +7,8 @@ const DisplayIcons = () => {
   return (
     <>
       <Div className="width-per-100 p-x-temp-4 m-y-temp-8">
-        {ICON_TYPES?.map((item, idx) => (
+        <Icon type="close" />
+        {/* {ICON_TYPES?.map((item, idx) => (
           <Div
             type="flex"
             vAlign="center"
@@ -17,7 +18,7 @@ const DisplayIcons = () => {
             <Div className="f-b">{item}:</Div>
             <Icon type={item} width={40} height={40} />
           </Div>
-        ))}
+        ))} */}
       </Div>
     </>
   );
